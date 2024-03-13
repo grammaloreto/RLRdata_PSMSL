@@ -5,7 +5,7 @@ The programs for statistical, trend, and seasonal analysis of Relative Sea Level
 
 There is also basic code to just read the file, change the date format (decimal to YYYY-MM-DD) and save them in databases (CSV). A python version to change the date format and save the rlrdata in csv is also present.
 
-[**Data**](https://psmsl.org/data/obtaining/stations/61.php) from the PSMSL website
+[Data](https://psmsl.org/data/obtaining/stations/61.php) from the PSMSL website.
 
 
 
