@@ -14,7 +14,7 @@ program convert_dates
     do while (n < nmax)
         read(10, '(A)', iostat=ios) line  ! Read each line as a complete string
         if (ios > 0) then
-            exit  ! End of the file
+            exit 
         else
             n = n + 1
             ! Breaks the line down into its individual components
@@ -25,8 +25,8 @@ program convert_dates
             else
                 ! Calculate the year and month from the fraction of the year
                 year = int(yearFraction)
-                month = int((yearFraction - year) * 12.0) + 1  ! Convert fraction of year a mes
-                ! Make sure the month is between 1 and 12
+                month = int((yearFraction - year) * 12.0) + 1  
+                ! Month between 1 and 12
                 month = min(max(month, 1), 12)
                 ! Convert and display date in 'YYYY-MM-DD' format
                 write(str_date, '(I4, "-", I2.2, "-", "01")') year, month

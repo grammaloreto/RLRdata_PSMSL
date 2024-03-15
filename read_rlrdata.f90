@@ -5,7 +5,7 @@ program read_rlrdata
     character(len=100) :: line
     integer :: n, ios
 
-    ! Open the data file
+    ! Open rlrdata file
     open(unit=10, file='61.rlrdata', status='old', action='read')
 
     n = 0
@@ -15,7 +15,7 @@ program read_rlrdata
             exit  ! End of the file
         else
             n = n + 1
-            print *, 'Línea ', n, ': ', trim(line)
+            print *, 'Line ', n, ': ', trim(line)
             if (n == 10) then  ! Print the first 10 lines to make sure is working
                 exit
             endif
